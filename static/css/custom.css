@@ -1,1 +1,85 @@
 /* your styles go here */
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+.h1,
+.h2,
+.h3,
+.h4,
+.box-simple h3,
+.box-image .name h3,
+.box-image-text .top .name h3,
+.box-image-text .top .name h4,
+.h5,
+.h6,
+ .box-image-text .content h5 a{
+  font-family: "Raleway", Helvetica, Arial, sans-serif;
+}
+
+/* featured jobs section */
+.rounded {
+  border-radius:0.7rem !important;
+}
+
+.container .featured .box-image-text.bg-visible .bg {
+  opacity:0;
+}
+
+.top {
+  overflow:hidden;
+}
+
+.top .img-fluid {
+  transition: transform 1.5s ease;
+}
+
+.top:hover .img-fluid {
+  transform: scale(1.5);
+}
+
+.box-image-text .featured__details,
+.badge{
+  font-family: "Roboto", Helvetica, Arial, sans-serif;
+}
+
+.container .featured-jobs-heading,
+.box-image-text .content h5 a{
+  color: #F5F8FA; /* extra light gray */
+}
+
+.box-image-text .content h5 a:focus,
+.box-image-text .content h5 a:hover{
+  text-decoration: none;
+  color: #1da1f2; /* primary */
+}
+
+.heading:after,
+.badge{
+  background-color: #F41F4E; /* secondary */
+}
+
+.fa-map-marker{
+  font-size: 1rem;
+  color: #F41F4E;
+}
+
+.badge{
+  color: #fff;
+}
+
+.bg-dark-custom{
+background-color: #12171d; /* background */
+}
+
+.box-image-text{
+  background: #18202b; /* surface */
+}
+
+.box-image-text .content p{
+color: #AAB8C2; /* light gray */
+}
+
