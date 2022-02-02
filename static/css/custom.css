@@ -138,6 +138,8 @@ ul {
   font-size: 14px;
       color: #7e7e7e;
   line-height: 28px;
+  text-align: justify;
+  text-justify: inter-word;
 }
 .footer-social-icon span {
   color: #fff;
