@@ -54,10 +54,10 @@
             <div id="navbarSupportedContent" class="collapse navbar-collapse">
                 <ul class="navbar-nav ml-auto">
                     <li class="nav-item active">
-                        <a href="/" class="nav-link">HOME<span class="sr-only">(current)</span></a>
+                        <a href="/" class="btn btn-secondary">HOME<span class="sr-only">(current)</span></a>
                     </li>
                     <li class="nav-item">
-                        <a href="#" class="nav-link">Contact Us!</a>
+                        <a href="#" class="btn btn-secondary">Contact Us!</a>
                     </li>
                     {% if request.user.is_authenticated and request.user.role == 'employer' %}
                         <li class="nav-item dropdown">
@@ -119,9 +119,7 @@
                             </div>
                         </li>
                         <li class="nav-item" style="color: #fff">
-                            <a href="{% url 'accounts:login' %}" class="btn navbar-btn btn-outline-light mb-5 mb-lg-0">
-                                <i class="fa fa-sign-in"></i>Login
-                            </a>
+                            <a href="{% url 'accounts:login' %}" class="btn btn-secondary">Login</a>
                         </li>
                     {% endif %}
                 </ul>
