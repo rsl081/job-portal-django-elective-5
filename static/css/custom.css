@@ -247,3 +247,7 @@ ul {
   color: #878787;
 }
 
+/* job form */
+.job-form-section.job-form-section--image{
+  width: 100%;
+}
