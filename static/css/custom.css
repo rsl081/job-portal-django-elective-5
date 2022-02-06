@@ -175,6 +175,8 @@ ul {
   font-size: 14px;
       color: #7e7e7e;
   line-height: 28px;
+  text-align: justify;
+  text-justify: inter-word;
 }
 .footer-social-icon span {
   color: #fff;
@@ -282,3 +284,33 @@ ul {
   color: #878787;
 }
 
+/* job form */
+.job-form-section.job-form-section--image{
+  width: 100%;
+}
+
+/* trending this month section */
+.trending-section{
+  background-color: #F5F8FA;
+}
+
+.job-listing{
+  padding-bottom: 20px;
+  background-color: #ffffff;
+  border-radius: 0.7rem;
+  border: none;
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}
+
+.job-listing .job__title a{
+  color: #1DA1F2;
+}
+
+.job-listing .job__title a:hover{
+  text-decoration: none;
+  letter-spacing: 3px;
+}
+
+.job__star__link:hover{
+  color: #fdcc0d;
+}
