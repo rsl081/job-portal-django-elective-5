@@ -10,7 +10,7 @@
     <section class="bg-light-gray">
         <div class="container">
             <h1 class="heading">{{ job.title }}<br>
-                <small>at <a href="#"> {{ job.company_name }}</a></small>
+                <small>at <a href='{{ job.website }}'> {{ job.company_name }}</a></small>
             </h1>
             <div class="job-detail-description"><i class="fa fa-map-marker job__location"> </i>
                 {{ job.location }} | Posted {{ job.created_at|timesince }} |
