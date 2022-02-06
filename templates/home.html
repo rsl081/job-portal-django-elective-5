@@ -112,7 +112,7 @@
             </div>
         </div>
     </section>
-    <section>
+    <section class="trending-section">
         <div class="container">
             <h4 class="heading">Trending this month</h4>
             {% for trending in trendings %}
@@ -121,23 +121,23 @@
                         <div class="col-md-12 col-lg-6">
                             <div class="row">
                                 <div class="col-2">
-                                    <img src="{% static 'img/itsourcecodes.jpg' %}"
+                                    <img src="{% static 'img/test_logo.png' %}"
                                          alt="ShareBoardd " class="img-fluid">
                                 </div>
                                 <div class="col-10">
-                                    <h4 class="job__title">
+                                    <h5 class="job__title">
                                         <a href="{% url 'jobs:jobs-detail' trending.id %}">{{ trending.title }}</a>
-                                    </h4>
+                                    </h5>
                                     <p class="job__company">
                                         {{ trending.company_name }}
                                     </p>
                                 </div>
                             </div>
                         </div>
-                        <div class="col-10 col-md-3 col-lg-2 ml-auto"><i class="fa fa-map-marker job__location"></i>
+                        <div class="col-10 col-md-3 col-lg-3 ml-auto"><i class="fa fa-map-marker job__location"></i>
                             {{ trending.location }}
                         </div>
-                        <div class="col-10 col-md-3 col-lg-3 ml-auto">
+                        <div class="col-10 col-md-3 col-lg-2 ml-auto">
                             <p>Posted {{ trending.created_at|timesince }}</p>
                         </div>
                         <div class="col-sm-12 col-md-2 col-lg-1">
