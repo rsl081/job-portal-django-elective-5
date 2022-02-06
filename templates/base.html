@@ -10,12 +10,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="robots" content="all,follow">
     <!-- Bootstrap CSS-->
-    <link rel="stylesheet"
+   <link rel="stylesheet"
           href="{% static 'vendor/bootstrap/css/bootstrap.min.css' %}">
+
     <!-- Font Awesome CSS-->
     <link rel="stylesheet"
           href="{% static 'vendor/font-awesome/css/font-awesome.min.css' %}">
-    <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
+
     <!-- Google fonts - Roboto for copy, Montserrat for headings-->
     <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Roboto:300,400,700">
     <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Montserrat:400,700">
@@ -31,8 +32,10 @@
     <!-- Custom stylesheet - for your changes-->
     <link rel="stylesheet" href="{% static 'css/custom.css' %}">
     {% block styles %}{% endblock %}
+
     <!-- Favicon-->
-    <link rel="shortcut icon" href="favicon.png">
+<!--    <link rel="shortcut icon" href="favicon.png">-->
+
     <!-- Tweaks for older IEs--><!--[if lt IE 9]>
     <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
     <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script><![endif]-->
@@ -54,10 +57,10 @@
             <div id="navbarSupportedContent" class="collapse navbar-collapse">
                 <ul class="navbar-nav ml-auto">
                     <li class="nav-item active">
-                        <a href="/" class="btn btn-secondary">HOME<span class="sr-only">(current)</span></a>
+                        <a href="/" class="nav-link">Home <i class="fa fa-home" aria-hidden="true"></i></a>
                     </li>
                     <li class="nav-item">
-                        <a href="#" class="btn btn-secondary">Contact Us!</a>
+                        <a href="#contact" class="nav-link">Contact Us<i class="fa fa-envelope"></i></a>
                     </li>
                     {% if request.user.is_authenticated and request.user.role == 'employer' %}
                         <li class="nav-item dropdown">
@@ -119,7 +122,8 @@
                             </div>
                         </li>
                         <li class="nav-item" style="color: #fff">
-                            <a href="{% url 'accounts:login' %}" class="btn btn-secondary">Login</a>
+                            <a href="{% url 'accounts:login' %}" class="nav-link">Login<i class="fa fa-sign-in" aria-hidden="true"></i>
+                            </a>
                         </li>
                     {% endif %}
                 </ul>
@@ -184,8 +188,11 @@
                             <a href="index.html"><img src="{% static 'img/redandblacklogo.png' %}" class="img-fluid" alt="logo"></a>
                         </div>
                         <div class="footer-text">
-                            <p>Lorem ipsum dolor sit amet, consec tetur adipisicing elit, sed do eiusmod tempor incididuntut consec tetur adipisicing
-                            elit,Lorem ipsum dolor sit amet.</p>
+                             <div class="footer-social-icon">
+                            <span>About Us</span>
+                             </div>
+                            <p>Smiling House is an efficient and quality oriented job portal that allows the users: job-hunters or business owners alike
+to connect with each other through an advanced 2-way matching technology which bring forth new opportunities and smiles for each other in the field of industry. </p>
                         </div>
                         <div class="footer-social-icon">
                             <span>Follow us</span>
