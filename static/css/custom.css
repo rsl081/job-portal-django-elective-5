@@ -10,19 +10,30 @@
   background: #fff;
   padding-top: 1 !important;
   padding-bottom: 1 !important;
+
 }
-.navbar-brand {
-  margin-right: auto;
-}
+
+
+
+
+
 .navbar-nav {
+  position:absolute;
+  padding-left: 380px;
   margin-left: auto;
+  font-size: 25px;
+  size: 50px;
+	overflow: hidden;
 }
+
+
 
 .navbar ul.navbar-nav > li.active > a,
   .navbar ul.navbar-nav > li.show > a {
     text-decoration: none !important;
     border-top-color: #009900;
-    color: #009900;;
+    color: #009900;
+    
   }
 
 /* your styles go here */
