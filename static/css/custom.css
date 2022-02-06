@@ -1,3 +1,4 @@
+/* navbar */
 .header {
   width: 100%;
   background-attachment: fixed;
@@ -10,25 +11,17 @@
   padding-top: 1 !important;
   padding-bottom: 1 !important;
 }
-
-.navbar a{
-
-  float: left;
-  display: block;
-  color: #f2f2f2;
-  text-align: center;
-  padding: 10px 10px;
-  text-decoration: none;
-  font-size: 20px;
-  font-family: courier new;
-  font-weight: bold;
-
+.navbar-brand {
+  margin-right: auto;
+}
+.navbar-nav {
+  margin-left: auto;
 }
 
 .navbar ul.navbar-nav > li.active > a,
   .navbar ul.navbar-nav > li.show > a {
     text-decoration: none !important;
-    border-top-color: #009900;;
+    border-top-color: #009900;
     color: #009900;;
   }
 
