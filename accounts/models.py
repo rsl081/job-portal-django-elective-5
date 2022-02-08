@@ -18,7 +18,7 @@ class User(AbstractUser):
                               error_messages={
                                   'unique': "A user with that email already exists.",
                               })
-
+    is_active = models.BooleanField(default=True)
     USERNAME_FIELD = "email"
     REQUIRED_FIELDS = []
 
