@@ -7,36 +7,43 @@
 {% block content %}
 
     <section class="job-form-section job-form-section--compressed">
-        <div class="container">
-            <h4 class="heading">Find a <span class="accent">job </span> that will <span class="accent">fit to your experties</span></h4>
+        <div class="container job-form-section-inner">
             <form id="job-main-form" method="get" action="#" class="job-main-form">
                 <div class="controls">
                     <div class="row align-items-end">
                         <div class="col-sm-1 col-lg-2"></div>
-                        <div class="col-sm-5 col-lg-4 form-group">
-                            <label for="profession">Position</label>
+                        <div class="col-sm-5 col-lg-3 form-group">
+                            <label for="position">Position</label>
                             <input type="text" id="position" name="position"
                                    placeholder="Position you are looking for" class="form-control">
                         </div>
-                        <div class="col-sm-5 col-lg-4 form-group">
+                        <div class="col-sm-5 col-lg-3 form-group">
                             <label for="location">Location</label>
                             <input type="text" id="location" name="location" placeholder="Any particular location?"
                                    value="" class="form-control">
                         </div>
                         <div class="col-sm-1 col-lg-2 form-group">
                             <button type="submit" name="name"
-                                    class="btn btn-outline-white-primary job-main-form__button">
+                                    class="btn btn-outline-blue-primary job-main-form__button">
                                 <i class="fa fa-search"></i>
                             </button>
                         </div>
+                         <div class="col-sm-1 col-lg-2"></div>
                     </div>
                 </div>
             </form>
         </div>
     </section>
-    <section>
+    <section class="found-jobs-section">
         <div class="container">
-            <h3 class="heading">We have found <span class="accent">{{ jobs.count }}</span> jobs</h3>
+            {% if jobs.count == 0 %}
+                <div class="empty-state-container">
+                    <img class="img-fluid" src="{% static 'img/no_results_found_state.png' %}">
+                </div>
+                <h4 class="heading"> No results found </h4>
+            {% else %}
+                <h4 class="heading">We have <span class="accent">{{ jobs.count }}</span> jobs for you</h4>
+            {% endif %}
             {% for job in jobs %}
                 <div class="job-listing  ">
                     <div class="row">
@@ -44,11 +51,11 @@
                             <div class="row">
                                 <div class="col-2">
                                     <img src="{% static 'img/test_logo.png' %}"
-                                         alt="Ipsioou " class="img-fluid">
+                                         alt="Company Logo" class="img-fluid">
                                 </div>
                                 <div class="col-10">
-                                    <h4 class="job__title"><a
-                                            href="{% url 'jobs:jobs-detail' job.id %}">{{ job.title }}</a></h4>
+                                    <h5 class="job__title"><a
+                                            href="{% url 'jobs:jobs-detail' job.id %}">{{ job.title }}</a></h5>
                                     <p class="job__company">
                                         {{ job.company_name }}
                                     </p>
