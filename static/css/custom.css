@@ -23,7 +23,50 @@ h6,
  .box-image-text .content h5 a{
   font-family: "Raleway", Helvetica, Arial, sans-serif;
 }
+.container1{
+  padding-bottom:50px;
+}
+.home{
+  position:absolute;
+  height: auto;
+}
 
+.container1{
+  height: 250px;
+}
+
+.form-group1{
+  position: absolute;
+  top:50px;
+  right:-900px;
+  transform: translate(-50%, -50%);
+  background: white;
+  border:2px solid black;
+  width: 800px;
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  border-radius: 50px;
+}
+
+.form-control1{
+  width: 500px;
+  height: 30px;
+  background-color: white;
+  border-radius: 30px;
+  border: none;
+  display: flex;
+  align-items: center;
+  font-weight: bold;
+  top:0;
+  bottom:0;
+  right:0;
+  left:0;
+}
+
+.search{
+  cursor:pointer;
+}
 /* navbar */
 .header {
   width: 100%;
@@ -85,6 +128,9 @@ h6,
   color: #F5F8FA; /* extra light gray */
 }
 
+
+
+
 .box-image-text .content h5 a:focus,
 .box-image-text .content h5 a:hover{
   text-decoration: none;
@@ -94,7 +140,9 @@ h6,
 .heading:after,
 .badge{
   background-color: #F41F4E; /* secondary */
+  
 }
+
 
 .fa-map-marker,
 .accent{
