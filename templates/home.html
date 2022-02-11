@@ -38,38 +38,24 @@
         </div>
     </div>
     <!-- *** LOGIN MODAL END ***-->
-    
     <section class="bg-light-custom">
     <div class="container1">
         <div class="row">
-            <div class="col-lg-8 mx-auto ">
-               
-                    <h2 class="heading a" style="color: black">Find a job that will
-                       fit to your expertise.
+            <div class="col-lg-6 mx-auto ">
+                    <h2 class="heading a" style="color: black">Find a job that complements your skills
                     </h2>
                     <form id="job-main-form" method="get" action="{% url 'jobs:searh' %}" class="job-main-form">
                         <div class="controls" style="color: white;">
                             <div class="row align-items-center">
-                                <div class="col-md-5">
-                                    <div class="form-group1">
-                                        <label for="profession">Position</label>
-                                        <input type="text" id="profession" name="position"
-                                               placeholder="Position you are looking for" class="form-control1" style="color: black">
-                                    </input>
-                                    
-                                               <label for="location">Location</label>
-                                               <input type="text" id="location" name="location" 
-                                                      placeholder="Any particular location?" class="form-control1">   
-                                    </input>
-                                            <button type="submit" class="btn ">
+                                <div class="form-group1">
+                                    <input type="text" id="profession" name="position"
+                                           placeholder="Position you are looking for" class="form-control form-control1">
+                                    <input type="text" id="location" name="location"
+                                           placeholder="Any particular location?" class="form-control form-control1">
+                                    <button type="submit" class="btn btn-outline-blue-primary">
                                         <i class="fa fa-search" aria-hidden="true"></i>
-                                 
                                     </button>
-                                    </div>
                                 </div>
-                               
-                                
-                                
                             </div>
                         </div>
                     </form>
