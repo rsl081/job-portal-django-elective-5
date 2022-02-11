@@ -67,35 +67,6 @@ h6,
 .search{
   cursor:pointer;
 }
-/* navbar */
-.header {
-  width: 100%;
-  background-attachment: fixed;
-  background-position: fixed;
-}
-.navbar {
-  text-transform: uppercase;
-  letter-spacing: 0.1em;
-  background: #fff;
-  padding-top: 1 !important;
-  padding-bottom: 1 !important;
-
-}
-.navbar-nav {
-  position:absolute;
-  padding-left: 380px;
-  margin-left: auto;
-  font-size: 25px;
-  size: 50px;
-	overflow: hidden;
-}
-.navbar ul.navbar-nav > li.active > a,
-  .navbar ul.navbar-nav > li.show > a {
-    text-decoration: none !important;
-    border-top-color: #009900;
-    color: #009900;
-    
-  }
 
 /* featured jobs section */
 .rounded {
