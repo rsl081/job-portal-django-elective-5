@@ -25,6 +25,7 @@ SECRET_KEY = '@pzqp#x^+#(olu#wy(6=mi9&a8n+g&x#af#apn07@j=5oin=xb'
 DEBUG = True
 
 # Application definition
+DEFAULT_AUTO_FIELD='django.db.models.AutoField'
 
 INSTALLED_APPS = [
     'django.contrib.admin',
@@ -117,7 +118,7 @@ PROJECT_ROOT = os.path.dirname(os.path.abspath(__file__))
 STATIC_ROOT = os.path.join(PROJECT_ROOT, 'staticfiles')
 ALLOWED_HOSTS = ['django-portal.herokuapp.com', 'localhost', '*']
 
-STATIC_URL = '/staticfiles/'
+STATIC_URL = '/static/'
 STATICFILES_DIRS = [
     os.path.join(BASE_DIR, "static"),
 ]

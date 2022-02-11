@@ -311,6 +311,15 @@ strong {
   padding-top: 0 !important;
   padding-bottom: 0 !important;
 }
+.navbar-nav {
+  position:absolute;
+  padding-left: 380px;
+  margin-left: auto;
+  font-size: 25px;
+  size: 50px;
+}
+
+
 .navbar a {
   font-family: "Montserrat", Helvetica, Arial, sans-serif;
 }
