@@ -2,6 +2,7 @@
 
 body{
   background-color: #F5F8FA;
+  overflow-x: hidden;
 }
 
 h1,
@@ -23,45 +24,36 @@ h6,
  .box-image-text .content h5 a{
   font-family: "Raleway", Helvetica, Arial, sans-serif;
 }
-.container1{
-  padding-bottom:50px;
-}
-.home{
-  position:absolute;
-  height: auto;
-}
 
-.container1{
-  height: 250px;
+.bg-light-custom{
+  padding: 20vh 0;
+}
+.job-main-form{
+  padding: 0 1.5rem;
 }
 
 .form-group1{
-  position: absolute;
-  top:50px;
-  right:-900px;
-  transform: translate(-50%, -50%);
+  margin: 0 1rem;
   background: white;
-  border:2px solid black;
-  width: 800px;
-  padding: 20px;
+  border: 2px solid #12171d;
+  width: 100%;
+  padding: 1rem;
   display: flex;
   justify-content: space-between;
   border-radius: 50px;
+  align-items: center;
+  gap: 1rem;
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
 }
 
 .form-control1{
-  width: 500px;
-  height: 30px;
+  flex: 1;
+  padding: 0.375rem 0.75rem;
   background-color: white;
   border-radius: 30px;
   border: none;
   display: flex;
   align-items: center;
-  font-weight: bold;
-  top:0;
-  bottom:0;
-  right:0;
-  left:0;
 }
 
 .search{
@@ -99,21 +91,15 @@ h6,
   color: #F5F8FA; /* extra light gray */
 }
 
-
-
-
 .box-image-text .content h5 a:focus,
 .box-image-text .content h5 a:hover{
   text-decoration: none;
   color: #1da1f2; /* primary */
 }
 
-.heading:after,
-.badge{
-  background-color: #F41F4E; /* secondary */
-  
+.heading:after{
+  background-color: #1da1f2;
 }
-
 
 .fa-map-marker,
 .accent{
@@ -126,6 +112,7 @@ h6,
 
 .badge{
   color: #fff;
+  background-color: #1da1f2;
 }
 
 .bg-dark-custom{
@@ -146,14 +133,14 @@ ul {
     padding: 0px;
 }
 .footer-section {
-  background: #151414;
+  background: #12171d;
   position: relative;
 }
 .footer-cta {
-  border-bottom: 1px solid #373636;
+  border-bottom: 1px solid #293648;
 }
 .single-cta i {
-  color: #ff5e14;
+  color: #1da1f2;
   font-size: 30px;
   float: left;
   margin-top: 8px;
@@ -169,7 +156,7 @@ ul {
   margin-bottom: 2px;
 }
 .cta-text span {
-  color: #757575;
+  color: #AAB8C2;
   font-size: 15px;
 }
 .footer-content {
@@ -193,7 +180,7 @@ ul {
 .footer-text p {
   margin-bottom: 14px;
   font-size: 14px;
-      color: #7e7e7e;
+  color: #AAB8C2;
   line-height: 28px;
   text-align: justify;
   text-justify: inter-word;
@@ -241,7 +228,7 @@ ul {
   bottom: -15px;
   height: 2px;
   width: 50px;
-  background: #ff5e14;
+  background: #1da1f2;
 }
 .footer-widget ul li {
   display: inline-block;
@@ -250,10 +237,10 @@ ul {
   margin-bottom: 12px;
 }
 .footer-widget ul li a:hover{
-  color: #ff5e14;
+  color: #1da1f2;
 }
 .footer-widget ul li a {
-  color: #878787;
+  color: #AAB8C2;
   text-transform: capitalize;
 }
 .subscribe-form {
@@ -281,16 +268,16 @@ ul {
   transform: rotate(-6deg);
 }
 .copyright-area{
-  background: #202020;
+  background: #18202b;
   padding: 25px 0;
 }
 .copyright-text p {
   margin: 0;
   font-size: 14px;
-  color: #878787;
+  color: #AAB8C2;
 }
 .copyright-text p a{
-  color: #ff5e14;
+  color: #1da1f2;
 }
 .footer-menu li {
   display: inline-block;
@@ -301,7 +288,7 @@ ul {
 }
 .footer-menu li a {
   font-size: 14px;
-  color: #878787;
+  color: #AAB8C2;
 }
 
 /* job form */
@@ -368,7 +355,7 @@ ul {
 }
 
 .page-item.active .page-link:hover{
- color: #fff;
+  color: #fff;
 }
 
 .job-form-section .heading:after,
@@ -405,4 +392,38 @@ input#location:focus,
 .empty-state-container{
   width: 200px;
   margin: 0 auto 1rem;
+}
+
+/* Navigation*/
+.navbar{
+  height: 100px;
+}
+
+.navbar-brand{
+  width: 300px;
+}
+
+.navbar-brand img{
+  width: 100%;
+  height: auto;
+}
+
+/* Browse job offers section */
+section.section-divider .overlay{
+  background: #1da1f2;
+}
+
+.col-lg-12 p .btn-outline-light:hover {
+  color: #1DA1F2; !important;
+}
+
+/* Overriding navbar hover */
+.navbar ul.navbar-nav > li > a:not(.navbar-btn):hover,
+ .navbar ul.navbar-nav > li.active > a, .navbar ul.navbar-nav > li.show > a{
+  border-top-color: #1DA1F2;
+  color: #1DA1F2;
+}
+
+.navbar ul.navbar-nav > li.active > a, .navbar ul.navbar-nav > li.show > a {
+  text-decoration: none !important;
 }
