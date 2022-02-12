@@ -24,17 +24,17 @@ class EmployeeRegistrationForm(UserCreationForm):
 
         self.fields['first_name'].widget.attrs.update(
             {
-                'placeholder': 'Enter First Name',
+                'placeholder': 'John',
             }
         )
         self.fields['last_name'].widget.attrs.update(
             {
-                'placeholder': 'Enter Last Name',
+                'placeholder': 'Doe',
             }
         )
         self.fields['email'].widget.attrs.update(
             {
-                'placeholder': 'Enter Email',
+                'placeholder': 'johndoe@example.com',
             }
         )
         self.fields['password1'].widget.attrs.update(
@@ -44,7 +44,7 @@ class EmployeeRegistrationForm(UserCreationForm):
         )
         self.fields['password2'].widget.attrs.update(
             {
-                'placeholder': 'Confirm Password',
+                'placeholder': 'Re-enter Password',
             }
         )
 

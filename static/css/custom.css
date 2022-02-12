@@ -414,7 +414,7 @@ section.section-divider .overlay{
 }
 
 .col-lg-12 p .btn-outline-light:hover {
-  color: #1DA1F2; !important;
+  color: #1DA1F2 !important
 }
 
 /* Overriding navbar hover */

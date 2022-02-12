@@ -1873,15 +1873,14 @@ ul.dropdown-menu li a:hover {
   box-shadow: 0 0 0 0.2rem rgba(255, 116, 115, 0.5);
 }
 .btn-outline-white-primary {
-  color: #ff7473;
+  color: #dadada;
   background-color: #fff;
   background-image: none;
-  border-color: #ff7473;
+  border-color: #dadada;
 }
 .btn-outline-white-primary:hover {
-  color: #fff;
-  background-color: green;
-  border-color: #ff7473;
+  color: #ff5555;
+  border-color: #ff5555;
 }
 .btn-outline-white-primary:focus,
 .btn-outline-white-primary.focus {
