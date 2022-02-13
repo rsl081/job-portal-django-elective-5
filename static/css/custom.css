@@ -32,6 +32,71 @@ h6,
   padding: 0 1.5rem;
 }
 
+
+.txt-color{
+  color:#1DA1F2;
+  }
+  .txt-color:hover{
+  color:#0e5f96;
+  }
+
+
+.blockquote {
+    padding: 0.5rem 1rem;
+    margin-bottom: 2rem;
+    font-size: 0.9rem;
+    border-left: 5px solid #1DA1F2;
+  }
+
+.btn-to{
+  background-color:#1DA1F2;
+  border-color: #0976be;
+  border:none;
+  color:white;
+}
+
+.btn-to:hover{
+  background-color:#1DA1F2;
+  border-color: #1DA1F2;
+ 
+  color: #fff;
+}
+
+.lead:hover{
+  color:#0976be;
+}
+
+
+.btn-primary {
+  color: color-yiq(#1DA1F2);
+  background-color:#1DA1F2;
+  border-color: #1DA1F2;
+}
+.btn-primary:hover {
+  color: color-yiq(#1DA1F2);
+  background-color:#0976be;
+  border-color: #0976be;
+}
+.btn-primary:focus,
+.btn-primary.focus {
+  -webkit-box-shadow: 0 0 0 0.2rem rgba(255, 116, 115, 0.5);
+  box-shadow: 0 0 0 0.2rem rgba(255, 116, 115, 0.5);
+}
+.btn-primary.disabled,
+.btn-primary:disabled {
+  background-color:#0976be;
+  border-color: #0976be;
+}
+.btn-primary:not([disabled]):not(.disabled):active,
+.btn-primary:not([disabled]):not(.disabled).active,
+.show > .btn-primary.dropdown-toggle {
+  color: color-yiq(#1DA1F2);
+  background-color:#0976be;
+  border-color: #0976be;
+  -webkit-box-shadow: 0 0 0 0.2rem rgba(255, 116, 115, 0.5);
+  box-shadow: 0 0 0 0.2rem rgba(255, 116, 115, 0.5);
+}
+
 .form-group1{
   margin: 0 1rem;
   background: white;
@@ -414,7 +479,7 @@ section.section-divider .overlay{
 }
 
 .col-lg-12 p .btn-outline-light:hover {
-  color: #1DA1F2; !important;
+  color: #1DA1F2 !important;
 }
 
 /* Overriding navbar hover */
