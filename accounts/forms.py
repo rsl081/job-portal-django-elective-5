@@ -24,17 +24,17 @@ class EmployeeRegistrationForm(UserCreationForm):
 
         self.fields['first_name'].widget.attrs.update(
             {
-                'placeholder': 'Enter First Name',
+                'placeholder': 'John',
             }
         )
         self.fields['last_name'].widget.attrs.update(
             {
-                'placeholder': 'Enter Last Name',
+                'placeholder': 'Doe',
             }
         )
         self.fields['email'].widget.attrs.update(
             {
-                'placeholder': 'Enter Email',
+                'placeholder': 'johndoe@example.com',
             }
         )
         self.fields['password1'].widget.attrs.update(
@@ -44,7 +44,7 @@ class EmployeeRegistrationForm(UserCreationForm):
         )
         self.fields['password2'].widget.attrs.update(
             {
-                'placeholder': 'Confirm Password',
+                'placeholder': 'Re-enter Password',
             }
         )
 
@@ -53,22 +53,22 @@ class EmployeeRegistrationForm(UserCreationForm):
         fields = ['first_name', 'last_name', 'email', 'password1', 'password2', 'gender']
         error_messages = {
             'first_name': {
-                'required': 'First name is required',
-                'max_length': 'Name is too long'
+                'required': 'First name is required.',
+                'max_length': 'Name is too long!'
             },
             'last_name': {
-                'required': 'Last name is required',
-                'max_length': 'Last Name is too long'
+                'required': 'Last name is required.',
+                'max_length': 'Last name is too long!'
             },
             'gender': {
-                'required': 'Gender is required'
+                'required': 'Please select a gender.'
             }
         }
 
     def clean_gender(self):
         gender = self.cleaned_data.get('gender')
         if not gender:
-            raise forms.ValidationError("Gender is required")
+            raise forms.ValidationError("Please select a gender")
         return gender
 
     def save(self, commit=True):
@@ -90,17 +90,17 @@ class EmployerRegistrationForm(UserCreationForm):
 
         self.fields['first_name'].widget.attrs.update(
             {
-                'placeholder': 'Enter Company Name',
+                'placeholder': 'Google',
             }
         )
         self.fields['last_name'].widget.attrs.update(
             {
-                'placeholder': 'Enter Company Address',
+                'placeholder': '1600 Amphitheatre Parkway, Mountain View, California.',
             }
         )
         self.fields['email'].widget.attrs.update(
             {
-                'placeholder': 'Enter Email',
+                'placeholder': 'google@example.com',
             }
         )
         self.fields['password1'].widget.attrs.update(
@@ -110,7 +110,7 @@ class EmployerRegistrationForm(UserCreationForm):
         )
         self.fields['password2'].widget.attrs.update(
             {
-                'placeholder': 'Confirm Password',
+                'placeholder': 'Re-enter Password',
             }
         )
 
@@ -119,12 +119,12 @@ class EmployerRegistrationForm(UserCreationForm):
         fields = ['first_name', 'last_name', 'email', 'password1', 'password2']
         error_messages = {
             'first_name': {
-                'required': 'First name is required',
-                'max_length': 'Name is too long'
+                'required': 'First name is required.',
+                'max_length': 'Name is too long!'
             },
             'last_name': {
-                'required': 'Last name is required',
-                'max_length': 'Last Name is too long'
+                'required': 'Last name is required.',
+                'max_length': 'Last name is too long!'
             }
         }
 
@@ -158,9 +158,9 @@ class UserLoginForm(forms.Form):
             self.user = authenticate(email=email, password=password)
 
             if self.user is None:
-                raise forms.ValidationError("User Does Not Exist.")
+                raise forms.ValidationError("User Not Found.")
             if not self.user.check_password(password):
-                raise forms.ValidationError("Password Does not Match.")
+                raise forms.ValidationError("Incorrect Password.")
             if not self.user.is_active:
                 raise forms.ValidationError("User is not Active.")
 

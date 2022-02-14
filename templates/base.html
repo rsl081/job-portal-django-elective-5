@@ -112,13 +112,9 @@
                         </li>
                     {% else %}
                         <li class="nav-item dropdown">
-                            <a id="pages" href="#" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"
-                               class="nav-link dropdown-toggle"><i class="fa fa-signing"></i>Register
+                            <a id="pages" href="{% url 'accounts:employee-register' %}" aria-haspopup="true" aria-expanded="false"
+                               class="nav-link">Register<i class="fa fa-signing"></i>
                             </a>
-                            <div aria-labelledby="pages" class="dropdown-menu">
-                                <a href="{% url 'accounts:employee-register' %}" class="dropdown-item">Employee</a>
-                                <a href="{% url 'accounts:employer-register' %}" class="dropdown-item">Employers</a>
-                            </div>
                         </li>
                         <li class="nav-item" style="color: #fff">
                             <a href="{% url 'accounts:login' %}" class="nav-link">Login<i class="fa fa-sign-in" aria-hidden="true"></i>
