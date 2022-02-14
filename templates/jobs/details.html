@@ -10,7 +10,7 @@
     <section class="bg-light-gray">
         <div class="container">
             <h1 class="heading">{{ job.title }}<br>
-                <small>at <a class="txt-color" href='{{ job.website }}'> {{ job.company_name }}</a></small>
+                <small>at <a class="txt-colorr" href='{{ job.website }}'> {{ job.company_name }}</a></small>
             </h1>
             <div class="job-detail-description"><i class="fa fa-map-marker job__location"> </i>
                 {{ job.location }} | Posted {{ job.created_at|timesince }} |
@@ -38,12 +38,12 @@
                         {% if request.user.is_authenticated %}
                             {% is_already_applied job request.user as is_applied %}
                             {% if is_applied %}
-                                <input type="button" class="btn btn-primary btn-to" value="Already applied"/>
+                                <input type="button" class="btn btn-primary btn-too" value="Already applied"/>
                             {% else %}
                                 <form action="{% url 'jobs:apply-job' job.id %}" method="post">
                                     {% csrf_token %}
                                     <input type="hidden" name="job" value="{{ job.id }}">
-                                    <input type="submit" class="btn btn-primary btn-to"
+                                    <input type="submit" class="btn btn-primary btn-too"
                                            value="Apply for this job"/>
                                 </form>
                             {% endif %}
@@ -51,7 +51,7 @@
                             <form action="{% url 'jobs:apply-job' job.id %}" method="post">
                                 {% csrf_token %}
                                 <input type="hidden" name="job" value="{{ job.id }}">
-                                <input type="submit" class="btn btn-primary btn-to"
+                                <input type="submit" class="btn btn-primary btn-too"
                                        value="Apply for this job"/>
                             </form>
                         {% endif %}
@@ -75,12 +75,12 @@
                     </p>
                     <div class="job-detail__apply-top">
                         {% if is_applied %}
-                            <input type="button" class="btn btn-primary btn-to" value="Already applied"/>
+                            <input type="button" class="btn btn-primary btn-too" value="Already applied"/>
                         {% else %}
                             <form action="{% url 'jobs:apply-job' job.id %}" method="post">
                                 {% csrf_token %}
                                 <input type="hidden" name="job" value="{{ job.id }}">
-                                <input type="submit" class="btn btn-primary btn-to" value="Apply for this job"/>
+                                <input type="submit" class="btn btn-primary btn-too" value="Apply for this job"/>
                             </form>
                         {% endif %}
                     </div>
