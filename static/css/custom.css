@@ -492,3 +492,28 @@ section.section-divider .overlay{
 .navbar ul.navbar-nav > li.active > a, .navbar ul.navbar-nav > li.show > a {
   text-decoration: none !important;
 }
+
+/* form */
+.col-lg-6{
+  margin: 0 auto;
+}
+
+.box{
+width: 100%;
+  margin: 15vh 0;
+  border: none;
+  border-radius: 0.7rem;
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}
+
+.lead{
+  text-align: center;
+}
+
+.box input{
+  border-radius: 0.4rem;
+}
+
+.box form button{
+  color: #fff;
+}
