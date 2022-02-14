@@ -16,7 +16,7 @@ class JobPortalApplicant(admin.ModelAdmin):
 
 
 class JobPortalJobs(admin.ModelAdmin):
-    list_filter = ('category', 'type',)
+    list_filter = ('category', 'type', 'company_name', 'user', 'last_date', 'created_at')
 
 
 admin.site.register(User, JobPortalUser)
