@@ -6,7 +6,7 @@
 {% block content %}
 
     <div class="col-lg-6 offset-3" style="display:flex; justify-content:center; ">
-        <div class="box" style="margin-top:20px; margin-right:20px; border-radius:10px; width:550px; box-shadow: 5px 10px;">
+        <div class="box">
             <h3 style="text-align:center; margin-bottom:50px;">Login</h3>
             {% if form.errors %}
                 {% for field in form %}
@@ -28,27 +28,23 @@
                 {% csrf_token %}
                 {% for field in form %}
                     <div class="form-group" >
-<!--                        <label for="id_{{ field.name }}">{{ field.label }}</label>-->
                         <input type="{{ field.field.widget.input_type }}"
                                class="form-control"
                                name="{{ field.name }}"
                                id="id_{{ field.name }}"
                                placeholder="{{ field.field.widget.attrs.placeholder }}"
-                               style="border-radius:20px;"
                         >
                     </div>
                 {% endfor %}
                 <div class="text-center">
-                    <button type="submit" class="btn btn-primary btn-too">
-                        <i class="fa fa-sign-in"></i> Log in
-                    </button>
-
-                    <br/><br/>
+                  
+                    <button type="submit" class="btn btn-outline-blue-primary">Log in</button><br/><br/>
 
                 </div>
-
-                <a href="{% url 'accounts:employee-register' %}" style="color: #1DA1F2;"><p class="lead" style="border-top: 1px solid #80576B; padding-top:20px;">Create new Account</p> </a>
-
+                <a href="{% url 'accounts:employee-register' %}" style="color: #1DA1F2;">
+                    <p class="lead" style="padding-top:20px;">Create new Account</p>
+                </a>
+            </form>
         </div>
     </div>
 {% endblock %}

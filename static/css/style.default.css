@@ -2763,8 +2763,9 @@ a.text-dark:hover {
   background-color: #fff;
   border-color: #ff7473;
   outline: none;
-  -webkit-box-shadow: 0 0 0 0.2rem rgba(255, 116, 115, 0.25);
-  box-shadow: 0 0 0 0.2rem rgba(255, 116, 115, 0.25);
+  -webkit-box-shadow: rgba(29, 161, 242, 0.3) 0px 0px 0px 3px;
+  box-shadow: rgba(29, 161, 242, 0.3) 0px 0px 0px 3px;
+  border: 1px solid #1da1f2;
 }
 .form-control::-webkit-input-placeholder {
   color: #868e96;
@@ -2942,9 +2943,4 @@ select.form-control-lg:not([size]):not([multiple]) {
 .custom-file-input.is-invalid:focus {
   -webkit-box-shadow: 0 0 0 0.2rem rgba(220, 53, 69, 0.25);
   box-shadow: 0 0 0 0.2rem rgba(220, 53, 69, 0.25);
-}
-
-.rounded
-{
-    border-radius:1rem;
 }
