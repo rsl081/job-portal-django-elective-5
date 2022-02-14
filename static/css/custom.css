@@ -33,10 +33,10 @@ h6,
 }
 
 
-.txt-color{
+.txt-colorr{
   color:#1DA1F2;
   }
-  .txt-color:hover{
+  .txt-colorr:hover{
   color:#0e5f96;
   }
 
@@ -45,37 +45,37 @@ h6,
     padding: 0.5rem 1rem;
     margin-bottom: 2rem;
     font-size: 0.9rem;
-    border-left: 5px solid #1DA1F2;
+    border-left: 5px solid #1DA1F3;
   }
 
-.btn-to{
-  background-color:#1DA1F2;
-  border-color: #0976be;
+.btn-too{
+  background-color:#1DA1F3;
+  border-color: #0976b3;
   border:none;
   color:white;
 }
 
-.btn-to:hover{
-  background-color:#1DA1F2;
-  border-color: #1DA1F2;
+.btn-too:hover{
+  background-color:#1DA1F3;
+  border-color: #1DA1F3;
  
   color: #fff;
 }
 
 .lead:hover{
-  color:#0976be;
+  color:#0976b3;
 }
 
 
 .btn-primary {
-  color: color-yiq(#1DA1F2);
-  background-color:#1DA1F2;
-  border-color: #1DA1F2;
+  color: color-yiq(#1DA1F3);
+  background-color:#1DA1F3;
+  border-color: #1DA1F3;
 }
 .btn-primary:hover {
-  color: color-yiq(#1DA1F2);
-  background-color:#0976be;
-  border-color: #0976be;
+  color: color-yiq(#1DA1F3);
+  background-color:#0976b3;
+  border-color: #0976b3;
 }
 .btn-primary:focus,
 .btn-primary.focus {
@@ -84,15 +84,15 @@ h6,
 }
 .btn-primary.disabled,
 .btn-primary:disabled {
-  background-color:#0976be;
-  border-color: #0976be;
+  background-color:#0976b3;
+  border-color: #0976b3;
 }
 .btn-primary:not([disabled]):not(.disabled):active,
 .btn-primary:not([disabled]):not(.disabled).active,
 .show > .btn-primary.dropdown-toggle {
-  color: color-yiq(#1DA1F2);
-  background-color:#0976be;
-  border-color: #0976be;
+  color: color-yiq(#1DA1F3);
+  background-color:#0976b3;
+  border-color: #0976b3;
   -webkit-box-shadow: 0 0 0 0.2rem rgba(255, 116, 115, 0.5);
   box-shadow: 0 0 0 0.2rem rgba(255, 116, 115, 0.5);
 }
@@ -121,9 +121,7 @@ h6,
   align-items: center;
 }
 
-.search{
-  cursor:pointer;
-}
+
 
 /* featured jobs section */
 .rounded {
